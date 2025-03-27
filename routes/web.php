@@ -32,6 +32,11 @@ Route::get('/category', function () {
 
 
 
+Route::get('admin/login', function () {
+    return view('admin/login');
+})->name('login');
+
+
 Route::get('admin/index', function () {
     return view('admin/index');
 })->name('index');
